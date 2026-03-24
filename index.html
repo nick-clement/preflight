@@ -831,10 +831,10 @@
             </div>
           </div>
           <div class="vote-col">
+            <span class="vote-count" id="vc-${app.id}">${app.votes}</span>
             <button class="vote-btn ${hasVoted ? 'voted' : ''}" onclick="vote('${app.id}', ${i})" aria-label="Upvote ${app.name}">
               <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
             </button>
-            <span class="vote-count" id="vc-${app.id}">${app.votes}</span>
           </div>
         </div>
       `;
